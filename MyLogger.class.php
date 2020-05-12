@@ -1,8 +1,11 @@
 <?php
-    class MyLogger
+
+class MyLogger
+{
+    public function log($message)
     {
-        public function log($message) {
-            error_log($message, 0);
-        }
+        error_log($message, 0);
     }
+}
+
 ?>
